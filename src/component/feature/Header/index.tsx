@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 import Flexbox from "@/component/general/Flexbox";
 import classNames from "classnames";
+import Link from "next/link";
 
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 import Icon from "@/public/images/icon.svg";
 import useInteractiveOutsideTargetHandler from "../../../hooks/useInteractiveOutsideTargetHandler/useInteractiveOutsideTargetHandler";
 
