@@ -22,7 +22,8 @@ const Content = () => {
         "grid-cols-fit-card",
         "p-4",
         "gap-4",
-        "mb-14"
+        "mb-14",
+        "lg:mb-16"
       )}
     >
       {[...new Array(20)].map((_, idx) => {

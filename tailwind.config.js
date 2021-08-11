@@ -23,7 +23,7 @@ module.exports = {
         "1/4": "calc(100%/4)",
       },
       gridTemplateColumns: {
-        "fit-card": "repeat(auto-fit, minmax(320px, 1fr))",
+        "fit-card": "repeat(auto-fit, minmax(280px, 1fr))",
       },
     },
   },

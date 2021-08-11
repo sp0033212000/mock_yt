@@ -12,22 +12,28 @@ const Header = () => {
   return (
     <Flexbox
       as="header"
+      align={"center"}
       className={classNames(
-        "px-10",
-        "py-4",
+        "px-4",
+        "md:px-6",
+        "lg:px-10",
+        "py-2",
+        "md:py-3",
+        "lg:py-4",
         "sticky",
         "top-0",
         "border-b-2",
         "border-solid",
         "border-gray-400",
         "bg-white",
-        "z-20"
+        "z-20",
+        "max-w-full"
       )}
     >
       <Flexbox
         justify="center"
         align="center"
-        className={classNames("w-40", "flex-shrink-0")}
+        className={classNames("w-20", "md:w-32", "lg:w-40", "flex-shrink-0")}
       >
         <Icon />
       </Flexbox>
@@ -42,6 +48,8 @@ const Header = () => {
             "h-1.5",
             "bg-blue-400",
             "bottom-0",
+            "transform",
+            "translate-y-full",
             "rounded-full",
             "transition-width",
             "w-0",
@@ -53,9 +61,11 @@ const Header = () => {
         justify="center"
         align="center"
         className={classNames(
-          "w-10",
-          "h-10",
-          "text-3xl",
+          "w-4",
+          "lg:w-10",
+          "h-4",
+          "lg:h-10",
+          "text-2xl",
           "flex-shrink-0",
           "text-gray-400"
         )}
@@ -109,6 +119,7 @@ const User = () => {
             "rounded-xl",
             "transition-max-height",
             "overflow-hidden",
+            "bg-white",
             {
               "max-h-0": !show,
               "max-h-max": show,

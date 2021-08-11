@@ -24,7 +24,7 @@ const Footer = () => {
               className={classNames("flex-1", "cursor-pointer")}
             >
               <Link href={"/"}>
-                <div className={classNames("h-14")}>
+                <div className={classNames("h-14", "lg:h-16")}>
                   <Flexbox
                     direction={"col"}
                     justify={"center"}
@@ -39,11 +39,13 @@ const Footer = () => {
                       as={"span"}
                       justify={"center"}
                       align={"center"}
-                      className={classNames("text-2xl")}
+                      className={classNames("text-lg", "lg:text-2xl")}
                     >
                       <FontAwesomeIcon icon={icon} />
                     </Flexbox>
-                    <p>{title}</p>
+                    <p className={classNames("text-xs", "lg:text-base")}>
+                      {title}
+                    </p>
                   </Flexbox>
                 </div>
               </Link>
