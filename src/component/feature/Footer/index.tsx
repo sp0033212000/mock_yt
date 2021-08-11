@@ -12,7 +12,13 @@ const Footer = () => {
   return (
     <Flexbox
       as={"footer"}
-      className={classNames("sticky", "bottom-0", "top-full", "w-full")}
+      className={classNames(
+        "sticky",
+        "bottom-0",
+        "top-full",
+        "w-full",
+        "bg-white"
+      )}
     >
       <nav className={classNames("w-full")}>
         <Flexbox as={"ul"}>

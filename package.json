@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "env TAILWIND_MODE=watch NODE_ENV=development next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@svgr/webpack": "^5.5.0",
+    "@tailwindcss/line-clamp": "^0.2.1",
     "classnames": "^2.3.1",
     "lodash.merge": "^4.6.2",
     "next": "11.0.1",

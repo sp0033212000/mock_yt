@@ -1,7 +1,11 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  purge: [
+    "./public/**/*.html",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -14,6 +18,12 @@ module.exports = {
       },
       maxHeight: {
         max: "9999px",
+      },
+      maxWidth: {
+        "1/4": "calc(100%/4)",
+      },
+      gridTemplateColumns: {
+        "fit-card": "repeat(auto-fit, minmax(320px, 1fr))",
       },
     },
   },
@@ -32,5 +42,6 @@ module.exports = {
         });
       });
     }),
+    require("@tailwindcss/line-clamp"),
   ],
 };
