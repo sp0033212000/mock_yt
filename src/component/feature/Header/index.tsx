@@ -19,7 +19,9 @@ const Header = () => {
         "top-0",
         "border-b-2",
         "border-solid",
-        "border-gray-400"
+        "border-gray-400",
+        "bg-white",
+        "z-20"
       )}
     >
       <Flexbox

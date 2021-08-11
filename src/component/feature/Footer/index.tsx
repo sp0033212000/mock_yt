@@ -12,13 +12,7 @@ const Footer = () => {
   return (
     <Flexbox
       as={"footer"}
-      className={classNames(
-        "sticky",
-        "bottom-0",
-        "top-full",
-        "w-full",
-        "bg-white"
-      )}
+      className={classNames("fixed", "bottom-0", "w-full", "bg-white")}
     >
       <nav className={classNames("w-full")}>
         <Flexbox as={"ul"}>
@@ -30,13 +24,13 @@ const Footer = () => {
               className={classNames("flex-1", "cursor-pointer")}
             >
               <Link href={"/"}>
-                <div>
+                <div className={classNames("h-14")}>
                   <Flexbox
                     direction={"col"}
                     justify={"center"}
                     align={"center"}
                     as={"span"}
-                    className={classNames("py-2.5", "hover:text-gray-900", {
+                    className={classNames("h-full", "hover:text-gray-900", {
                       "text-gray-400": idx !== 0,
                       "text-gray-900": idx === 0,
                     })}

@@ -21,10 +21,11 @@ const Content = () => {
         "grid",
         "grid-cols-fit-card",
         "p-4",
-        "gap-4"
+        "gap-4",
+        "mb-14"
       )}
     >
-      {[...new Array(5)].map((_, idx) => {
+      {[...new Array(20)].map((_, idx) => {
         const { width, height, src } = randomImage();
         return (
           <Flexbox
